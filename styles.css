@@ -1,12 +1,40 @@
 /***************************************
  * Base Styling
  ***************************************/
-body {
+ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
   background-color: #132435;
   font-family: 'Roboto', sans-serif;
+}
+
+/***************************************
+ * Top Menu Bar (Navigation)
+ ***************************************/
+.top-menu {
+  background-color: #0d1620; /* Same as footer */
+  padding: 10px 0;
+}
+.top-menu-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-menu-logo img {
+  max-width: 250px;
+  height: auto;
+}
+.top-menu-links a {
+  color: #5171ff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1em;
+}
+.top-menu-links a:hover {
+  color: #b3b3b3;
 }
 
 /***************************************
@@ -22,14 +50,13 @@ body {
 }
 
 /***************************************
- * Header Logo
+ * Header Logo (within Container)
  ***************************************/
 img.logo {
-  max-width: 280px;  /* Increased for a slightly larger header logo */
+  max-width: 250px;  /* Increased for a slightly larger header logo */
   height: auto;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /***************************************
@@ -40,7 +67,6 @@ p {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 a:link,
 a:visited {
   color: #5171ff;
@@ -56,12 +82,11 @@ a:hover {
  ***************************************/
 .table-container {
   width: 100%;
-  margin-bottom: 20px; /* Reduced from 30px for less space between tables */
+  margin-bottom: 20px; /* Reduced from 30px */
   overflow-x: auto; /* Enable horizontal scroll if needed */
 }
-
 table {
-  min-width: 600px; /* So table won't get scrunched too narrowly */
+  min-width: 600px; /* Prevent table from getting too narrow */
   border-collapse: collapse;
   font-family: 'Roboto', sans-serif;
   margin: 0; /* Let .table-container handle spacing */
@@ -104,11 +129,11 @@ footer {
 }
 .footer-container {
   width: 80%;
-  margin: 0 auto; /* Center footer horizontally to match container */
+  margin: 0 auto; /* Center footer horizontally */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  text-transform: lowercase; /* Keep consistent with site style */
+  text-transform: lowercase;
 }
 
 /* Left Column in Footer */
@@ -117,8 +142,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
 }
-
-/* Smaller as1003 Logo for the Footer */
 .footer-logo {
   max-width: 150px;
   height: auto;
@@ -137,8 +160,6 @@ footer {
 .footer-links a:hover {
   color: #b3b3b3;
 }
-
-/* Copyright */
 .copyright {
   font-size: 0.8em;
   margin: 0;
@@ -148,8 +169,8 @@ footer {
 .footer-right {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  gap: 10px; /* Spacing between logos */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .footer-right img {
   max-height: 60px;
@@ -158,17 +179,18 @@ footer {
 
 /***************************************
  * Mobile Responsive Adjustments
- * For screens <= 768px
  ***************************************/
 @media (max-width: 768px) {
   .container,
-  .footer-container {
+  .footer-container,
+  .top-menu-container {
     width: 90%;
     padding: 10px;
   }
   
   .logo,
-  .footer-logo {
+  .footer-logo,
+  .top-menu-logo img {
     max-width: 100%;
   }
   
@@ -185,11 +207,19 @@ footer {
     margin-top: 20px;
     justify-content: flex-start;
   }
+  
+  /* For the top menu bar, stack links under logo if needed */
+  .top-menu-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top-menu-links {
+    margin-top: 10px;
+  }
 }
 
 /***************************************
- * Roboto Font-Face Declarations
- * Hosted Locally from /fonts/
+ * Roboto Font-Face Declarations (Hosted Locally)
  ***************************************/
 @font-face {
   font-display: swap;
