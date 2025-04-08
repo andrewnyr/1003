@@ -24,7 +24,7 @@
   align-items: center;
 }
 .top-menu-logo img {
-  max-width: 250px;
+  max-width: 220px;  /* Reduced from 250px for a slightly smaller logo */
   height: auto;
 }
 .top-menu-links a {
@@ -53,7 +53,7 @@
  * Header Logo (within Container)
  ***************************************/
 img.logo {
-  max-width: 250px;  /* Increased for a slightly larger header logo */
+  max-width: 250px;  /* This is the main content logo */
   height: auto;
   display: block;
   margin-bottom: 20px;
