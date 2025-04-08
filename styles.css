@@ -1,0 +1,235 @@
+/***************************************
+ * Base Styling
+ ***************************************/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #132435;
+  font-family: 'Roboto', sans-serif;
+}
+
+/***************************************
+ * Container
+ ***************************************/
+.container {
+  width: 80%;
+  margin: 0 auto; /* Center container horizontally */
+  padding: 20px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase; /* All visible text will be lowercase */
+}
+
+/***************************************
+ * Header Logo
+ ***************************************/
+img.logo {
+  max-width: 280px;  /* Increased for a slightly larger header logo */
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/***************************************
+ * Paragraphs and Links
+ ***************************************/
+p {
+  font-size: 1.2em;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #5171ff;
+  font-family: 'Roboto', sans-serif;
+}
+a:hover {
+  color: #b3b3b3;
+  font-family: 'Roboto', sans-serif;
+}
+
+/***************************************
+ * Table Styling
+ ***************************************/
+.table-container {
+  width: 100%;
+  margin-bottom: 20px; /* Reduced from 30px for less space between tables */
+  overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+
+table {
+  min-width: 600px; /* So table won't get scrunched too narrowly */
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* Let .table-container handle spacing */
+}
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #34495e;
+}
+tr:nth-child(even) {
+  background-color: #2c3e50;
+}
+tr:nth-child(odd) {
+  background-color: #1a252f;
+}
+
+/***************************************
+ * Supporters Table Link Colors
+ ***************************************/
+.supporters-table a:link,
+.supporters-table a:visited {
+  color: white;
+}
+.supporters-table a:hover {
+  color: grey;
+}
+
+/***************************************
+ * Footer Styling
+ ***************************************/
+footer {
+  background-color: #0d1620; /* Slightly darker background */
+  margin-top: 60px;
+  border-top: 1px solid #2c3e50;
+  padding: 20px 0;
+}
+.footer-container {
+  width: 80%;
+  margin: 0 auto; /* Center footer horizontally to match container */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-transform: lowercase; /* Keep consistent with site style */
+}
+
+/* Left Column in Footer */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Smaller as1003 Logo for the Footer */
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-links {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.footer-links a {
+  color: #5171ff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.footer-links a:hover {
+  color: #b3b3b3;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* Right Column in Footer (with MANRS & ARIN Logos) */
+.footer-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 10px; /* Spacing between logos */
+}
+.footer-right img {
+  max-height: 60px;
+  height: auto;
+}
+
+/***************************************
+ * Mobile Responsive Adjustments
+ * For screens <= 768px
+ ***************************************/
+@media (max-width: 768px) {
+  .container,
+  .footer-container {
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .logo,
+  .footer-logo {
+    max-width: 100%;
+  }
+  
+  table {
+    font-size: 0.95em;
+  }
+  
+  /* Stack footer columns vertically */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-right {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+}
+
+/***************************************
+ * Roboto Font-Face Declarations
+ * Hosted Locally from /fonts/
+ ***************************************/
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/roboto-v32-latin-100.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/roboto-v32-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/roboto-v32-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/roboto-v32-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/roboto-v32-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/roboto-v32-latin-900.woff2") format("woff2");
+}

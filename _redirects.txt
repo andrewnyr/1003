@@ -1,0 +1,12 @@
+/twitter https://twitter.com/asten03
+/peeringdb https://www.peeringdb.com/asn/1003
+/qrator https://radar.qrator.net/as1003
+/hurricane https://bgp.he.net/AS1003
+/bgpdottools https://bgp.tools/as/1003
+/discord https://discord.gg/GqyVgExf
+/twitter/ https://twitter.com/asten03
+/peeringdb/ https://www.peeringdb.com/asn/1003
+/qrator/ https://radar.qrator.net/as1003
+/hurricane/ https://bgp.he.net/AS1003
+/bgpdottools/ https://bgp.tools/as/1003
+/discord/ https://discord.gg/GqyVgExf
