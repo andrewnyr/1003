@@ -12,9 +12,9 @@
 /***************************************
  * Top Menu Bar (Navigation)
  ***************************************/
-.top-menu {
+ .top-menu {
   background-color: #0d1620; /* Same as footer */
-  padding: 10px 0;
+  padding: 20px 0;  /* Increased from 10px 0 for a taller menu */
 }
 .top-menu-container {
   width: 80%;
@@ -24,7 +24,7 @@
   align-items: center;
 }
 .top-menu-logo img {
-  max-width: 220px;  /* Reduced from 250px for a slightly smaller logo */
+  max-width: 220px;  /* Slightly smaller logo as requested */
   height: auto;
 }
 .top-menu-links a {
@@ -36,6 +36,7 @@
 .top-menu-links a:hover {
   color: #b3b3b3;
 }
+
 
 /***************************************
  * Container
