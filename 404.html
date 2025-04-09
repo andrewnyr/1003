@@ -9,34 +9,26 @@
   <!-- Link to your existing stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Inline fixes to ensure footer sits below and requires scrolling to view -->
+  <!-- Inline CSS to create a sticky footer -->
   <style>
-    /* Ensure the html/body have no default margin/padding and fill the window */
+    /* Ensure the html and body fill the viewport without extra margins */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
     }
 
-    /* Wrapper that ensures the main content spans at least the full viewport height */
+    /* Wrapper that forces the page to fill the entire viewport */
     .page-wrapper {
       display: flex;
       flex-direction: column;
-      min-height: 100vh; /* entire viewport height */
+      min-height: 100vh; /* Full viewport height */
     }
 
-    /* This class ensures the 404 content takes full height by itself,
-       pushing the footer below the fold if content is short */
+    /* Main content that grows to take available space */
     .content {
-      flex: 1;
-      min-height: 100vh;  /* forces page to exceed one screen height */
-      /* You can adjust padding or other styling here if desired */
+      flex: 1; /* Takes up remaining space pushing the footer down */
       padding: 2rem;
-    }
-
-    /* Keep the footer's natural height; it appears after .content */
-    footer {
-      flex-shrink: 0;
     }
   </style>
 </head>
@@ -96,7 +88,6 @@
         </div>
       </div>
     </footer>
-
   </div> <!-- end page-wrapper -->
 </body>
 </html>
