@@ -28,7 +28,7 @@
   height: auto;
 }
 .top-menu-links a {
-  color: #5171ff;
+  color: #748eff;
   text-decoration: none;
   margin-left: 20px;
   font-size: 1em;
@@ -70,7 +70,7 @@ p {
 }
 a:link,
 a:visited {
-  color: #5171ff;
+  color: #748eff;
   font-family: 'Roboto', sans-serif;
 }
 a:hover {
@@ -154,7 +154,7 @@ footer {
   font-size: 1em;
 }
 .footer-links a {
-  color: #5171ff;
+  color: #748eff;
   text-decoration: none;
   margin-right: 15px;
 }
