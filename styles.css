@@ -136,16 +136,12 @@ footer {
   align-items: flex-start;
   text-transform: lowercase;
 }
-.footer-border {
-  width: 100%;
-  overflow: hidden; /* Hide horizontal overflow */
-  line-height: 0; /* Removes extra spacing around the image */
-}
 
-.footer-border img {
+.footer-border-bg {
   width: 100%;
-  height: 20px; /* Desired height */
-  display: block;
+  height: 20px;  /* the height of your SVG border */
+  background: url("/images/border.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 /* Left Column in Footer */
