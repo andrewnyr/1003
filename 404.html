@@ -2,32 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Important for responsive design on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Page Not Found - 404</title>
-  
-  <!-- Link to your existing stylesheet -->
+  <title>Page Not Found - 404</title>  
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Inline CSS to create a sticky footer -->
   <style>
-    /* Ensure the html and body fill the viewport without extra margins */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
     }
 
-    /* Wrapper that forces the page to fill the entire viewport */
     .page-wrapper {
       display: flex;
       flex-direction: column;
-      min-height: 100vh; /* Full viewport height */
+      min-height: 100vh; 
     }
 
-    /* Main content that grows to take available space */
     .content {
-      flex: 1; /* Takes up remaining space pushing the footer down */
+      flex: 1; 
       padding: 2rem;
     }
   </style>
@@ -59,35 +52,32 @@
       <p><a href="/">Return to homepage</a></p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <!-- Left side of footer -->
-        <div class="footer-left">
-          <a href="/">
-            <img class="footer-logo" src="/images/as1003-white.svg" alt="as1003 logo">
-          </a>
-          <div class="footer-links">
-            <a href="https://bgp.tools/as/1003" target="_blank">bgp.tools</a>
-            <a href="https://www.peeringdb.com/net/30323" target="_blank">peeringdb</a>
-            <a href="https://bgp.tools/lg/1003" target="_blank">looking glass</a>
-          </div>
-          <p class="copyright">
-            &copy; 2025 as1003. all rights reserved.
-          </p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="/">
+          <img class="footer-logo" src="/images/as1003-white.svg" alt="as1003 logo">
+        </a>
+        <div class="footer-links">
+          <a href="https://bgp.tools/as/1003" target="_blank">bgp.tools</a>
+          <a href="https://www.peeringdb.com/net/30323" target="_blank">peeringdb</a>
+          <a href="https://bgp.tools/lg/1003" target="_blank">looking glass</a>
         </div>
-
-        <!-- Right side of footer with MANRS and ARIN logos -->
-        <div class="footer-right">
-          <a href="https://manrs.org/" target="_blank">
-            <img src="/images/MANRS%20Logo.svg" alt="manrs logo">
-          </a>
-          <a href="https://www.arin.net" target="_blank">
-            <img src="/images/ARIN%20Member-0c8c16a4.svg" alt="arin logo">
-          </a>
-        </div>
+        <p class="copyright">
+          &copy; 2025 as1003. all rights reserved.
+        </p>
       </div>
-    </footer>
-  </div> <!-- end page-wrapper -->
+
+      <div class="footer-right">
+        <a href="https://manrs.org/" target="_blank">
+          <img src="/images/MANRS%20Logo.svg" alt="manrs logo">
+        </a>
+        <a href="https://www.arin.net" target="_blank">
+          <img src="/images/ARIN%20Member-0c8c16a4.svg" alt="arin logo">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
