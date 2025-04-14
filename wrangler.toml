@@ -1,0 +1,12 @@
+name = "1003-site-worker"
+account_id = "1b47c0ee9640c245ba237fa508e0178b"
+workers_dev = true
+compatibility_date = "2025-03-28"
+
+# Specify your main Worker entry point.
+main = "worker.js"
+
+# Define your static assets folder as a table.
+[assets]
+directory = "./public"
+binding = "ASSETS"
