@@ -7,5 +7,5 @@ main = "worker.js"
 
 [assets]
 directory = "./public"
-binding = "www-as1003-net-ASSETS"
+binding = "ASSETS"
 not_found_handling = "404-page"
